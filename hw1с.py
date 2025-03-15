@@ -17,8 +17,6 @@ def read_file(filename):
 text = read_file("data.txt")
 
 word_list = text.split()  # Разделяем текст на слова
-symbol_counter = Counter()  # Счётчик символов
-non_ascii_counter = Counter()  # Счётчик не-ASCII символов
 
 def get_longest_diverse_words(file_path: str,top_n=10) -> List[str]:
     words = text.split()
